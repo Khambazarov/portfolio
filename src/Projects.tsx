@@ -83,7 +83,10 @@ const Projects = () => {
                 ? project.description
                 : `${project.description.substring(0, 40)}...`}
             </p>
-            <button className="text-gray-400" onClick={() => toggleExpanded(index)}>
+            <button
+              className="mb-2 text-gray-400"
+              onClick={() => toggleExpanded(index)}
+            >
               {isExpanded ? "Show Less" : "Read More"}
             </button>
             <div className="flex flex-col sm:flex-row">
