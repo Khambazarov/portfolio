@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900 p-5">
-      <h1 className="mb-5 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
+      <h1 className="mb-5 text-4xl font-bold text-white">
         Contact Me
       </h1>
       <form className="w-full max-w-md">

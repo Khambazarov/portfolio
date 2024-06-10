@@ -9,11 +9,11 @@ const App = () => {
     <Router>
       <div className="App">
         <nav className="sticky top-0 w-full bg-gray-900 py-5 text-white">
-          <ul className="mx-auto flex max-w-2xl justify-between px-4">
+          <ul className="flex justify-center gap-x-4">
             <li>
               <Link
                 to="/"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
+                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800"
               >
                 Home
               </Link>
@@ -21,7 +21,7 @@ const App = () => {
             <li>
               <Link
                 to="/projects"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
+                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800"
               >
                 Projects
               </Link>
@@ -29,7 +29,7 @@ const App = () => {
             <li>
               <Link
                 to="/contact"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
+                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800"
               >
                 Contact
               </Link>
