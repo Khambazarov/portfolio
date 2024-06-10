@@ -62,7 +62,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 p-5">
-      <h1 className="mx- mb-5 flex justify-center text-4xl font-bold text-white">
+      <h1 className="mb-5 flex justify-center text-4xl font-bold text-white">
         My Projects
       </h1>
       {projectList.map((project, index) => {
