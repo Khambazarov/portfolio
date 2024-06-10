@@ -13,7 +13,7 @@ const App = () => {
             <li>
               <Link
                 to="/"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg font-bold uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
+                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
               >
                 Home
               </Link>
@@ -21,7 +21,7 @@ const App = () => {
             <li>
               <Link
                 to="/projects"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg font-bold uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
+                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
               >
                 Projects
               </Link>
@@ -29,7 +29,7 @@ const App = () => {
             <li>
               <Link
                 to="/contact"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg font-bold uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
+                className="rounded-md border-2 border-gray-700 p-2 font-mono text-lg uppercase transition-colors duration-300 hover:bg-gray-800 hover:text-teal-500"
               >
                 Contact
               </Link>
