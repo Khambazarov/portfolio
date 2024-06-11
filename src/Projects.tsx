@@ -32,6 +32,15 @@ export const Projects = () => {
     },
     {
       id: 3,
+      name: "TODO App",
+      shortDescription: "Developed using vite + react.js",
+      description:
+        "An efficient task management application that allows users to organize and track their daily tasks. Users can add, edit, and delete tasks, thereby enhancing their productivity and better managing their time.",
+      link: "https://khambazarov-todo.netlify.app/",
+      githubLink: "https://github.com/Khambazarov/todo",
+    },
+    {
+      id: 4,
       name: "Guessing App",
       shortDescription: "Developed using vite + react.js",
       description:
@@ -40,7 +49,7 @@ export const Projects = () => {
       githubLink: "https://github.com/Khambazarov/guess-my-number",
     },
     {
-      id: 4,
+      id: 5,
       name: "Memory App",
       shortDescription: "Currently being developed using Vite + React.js",
       description:
