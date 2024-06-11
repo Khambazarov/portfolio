@@ -1,7 +1,16 @@
 import { useState } from "react";
 
+interface ProjectProps {
+  id: number;
+  name: string;
+  shortDescription: string;
+  description: string;
+  link: string;
+  githubLink: string;
+}
+
 export const Projects = () => {
-  const projectList = [
+  const projectList: ProjectProps[] = [
     {
       id: 0,
       name: "My Portfolio App",
