@@ -2,7 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 
 const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID;
 
-const Contact = () => {
+export const Contact = () => {
   const [state, handleSubmit] = useForm(FORMSPREE_ID);
   if (state.succeeded) {
     return (
@@ -102,5 +102,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;

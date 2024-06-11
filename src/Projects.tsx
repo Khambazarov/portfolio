@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Projects = () => {
+export const Projects = () => {
   const projectList = [
     {
       id: 0,
@@ -113,5 +113,3 @@ const Projects = () => {
     </div>
   );
 };
-
-export default Projects;

@@ -1,6 +1,7 @@
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-900 p-5 text-center">
       <h1 className="mb-5 animate-pulse text-4xl font-bold text-white">
@@ -24,8 +25,24 @@ const Home = () => {
           Contact Me
         </Link>
       </div>
+      <div className="flex justify-center gap-x-6 mt-1">
+        <a
+          href="https://www.linkedin.com/feed"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
+        >
+          <FaLinkedin size={48} />
+        </a>
+        <a
+          href="https://github.com/Khambazarov"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
+        >
+          <FaGithubSquare size={48} />
+        </a>
+      </div>
     </div>
   );
 };
-
-export default Home;

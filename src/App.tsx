@@ -1,50 +1,58 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import {Home} from "./Home";
+import { About } from "./About";
+import {Projects} from "./Projects";
+import { Contact } from "./Contact";
 
-const App = () => {
+const Navigation = () => {
+  const location = useLocation();
+
+  const getNavLinkClass = (path: string) => {
+    return location.pathname === path
+      ? "rounded-md border-2 border-white p-1 font-mono sm:p-2 uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800 md:text-lg"
+      : "rounded-md border-2 border-gray-700 p-1 font-mono sm:p-2 uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800 md:text-lg";
+  };
+
+  return (
+    <nav className="sticky top-0 w-full bg-gray-900 py-5 text-white">
+      <ul className="flex flex-wrap justify-center gap-x-2 gap-y-4 md:gap-x-6">
+        <li>
+          <NavLink to="/" className={getNavLinkClass("/")}>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" className={getNavLinkClass("/about")}>
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/projects" className={getNavLinkClass("/projects")}>
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" className={getNavLinkClass("/contact")}>
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export const App = () => {
   return (
     <Router>
       <div className="App">
-        <nav className="sticky top-0 w-full bg-gray-900 py-5 text-white">
-          <ul className="flex justify-center gap-x-2 md:gap-x-6">
-            <li>
-              <Link
-                to="/"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-xs uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800 md:text-lg"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-xs uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800 md:text-lg"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/projects"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-xs uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800 md:text-lg"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="rounded-md border-2 border-gray-700 p-2 font-mono text-xs uppercase transition-colors duration-300 hover:border-white hover:bg-gray-800 md:text-lg"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -55,5 +63,3 @@ const App = () => {
     </Router>
   );
 };
-
-export default App;
