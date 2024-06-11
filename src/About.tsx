@@ -34,6 +34,19 @@ export const About = () => {
           >
             <FaGithubSquare size={48} />
           </a>
+          <a
+            href="https://digitalcareerinstitute.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
+          >
+            <img
+              src="https://avatars.githubusercontent.com/u/34306767?s=280&v=4"
+              width={48}
+              alt="DCI Logo"
+              className="rounded border-teal-500 bg-current"
+            />
+          </a>
         </div>
       </div>
     </>
