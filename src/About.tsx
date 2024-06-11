@@ -34,7 +34,7 @@ export const About = () => {
           >
             <FaGithubSquare size={48} />
           </a>
-          <a
+          {/* <a
             href="https://digitalcareerinstitute.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export const About = () => {
               alt="DCI Logo"
               className="rounded border-teal-500 bg-current"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </>
