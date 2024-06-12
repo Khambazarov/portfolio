@@ -1,16 +1,17 @@
 import { useState } from "react";
 import data from "./data.json";
 
-interface ProjectProps {
-  id: number;
-  name: string;
-  usedTechnologies: string;
-  description: string;
-  link: string;
-  githubLink: string;
+interface ProjectCardProps {
+  project: ProjectProps;
+  isExpanded: boolean;
+  toggleExpanded: () => void;
 }
 
-const ProjectCard = ({ project, isExpanded, toggleExpanded }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  project,
+  isExpanded,
+  toggleExpanded,
+}) => (
   <div key={project.id} className="mb-4 rounded bg-gray-800 p-4 shadow-lg">
     <h2 className="mb-2 text-2xl font-bold text-white">{project.name}</h2>
     <h3 className="mb-2 font-bold text-gray-300">{project.usedTechnologies}</h3>
