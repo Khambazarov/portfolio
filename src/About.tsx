@@ -1,35 +1,45 @@
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
-export const About = () => {
-  const skills = [
-    "CSS",
-    "SASS",
-    "Bootstrap",
-    "Tailwind CSS",
-    "JavaScript",
-    "TypeScript",
-    "React.js",
-    "React.ts",
-    "Node",
-    "Next",
-    "MongoDB",
-    "Mongoose",
-    "Git",
-    "GitHub",
-    "Linux",
-    "Four Languages",
-  ];
+const skills = [
+  "CSS",
+  "SASS",
+  "Bootstrap",
+  "JavaScript",
+  "ReactJS",
+  "Node",
+  "Express",
+  "MongoDB",
+  "Mongoose",
+  "Git",
+  "GitHub",
+  "Linux",
+];
 
-  const [activeIndex, setActiveIndex] = useState(0);
+const currentlyExpandingSkills = ["Tailwind", "TypeScript", "ReactTS", "Next"];
+
+export const About = () => {
+  const [activeIndexSkills, setActiveIndexSkills] = useState(0);
+  const [
+    activeIndexCurrentlyExpandingSkills,
+    setActiveIndexCurrentlyExpandingSkills,
+  ] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % skills.length);
-    }, 1000);
+      setActiveIndexSkills(Math.floor(Math.random() * skills.length));
+      setActiveIndexCurrentlyExpandingSkills(
+        Math.floor(Math.random() * currentlyExpandingSkills.length),
+      );
+    }, 2000);
 
     return () => clearInterval(intervalId);
-  }, [skills.length]);
+  }, []);
+
+  const generateClassName = (isActive: boolean): string =>
+    `rounded border p-2 text-center transition-colors duration-1000 ${
+      isActive ? "bg-teal-500 text-gray-900" : "text-teal-300"
+    }`;
 
   return (
     <>
@@ -48,19 +58,39 @@ export const About = () => {
           such as MERN-stack
         </h2>
         <div className="rounded border p-2">
-          <h2 className="p-2 text-center text-lg md:text-3xl">My Skills</h2>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {skills.map((skill, index) => (
+          <h2 className="p-2 text-center text-xl md:text-xl">My skills</h2>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            {skills.map((skill) => (
               <div
-                key={index}
-                className={`rounded border p-2 text-center ${index === activeIndex ? "bg-teal-500 text-gray-900" : "text-teal-300"}`}
+                key={skill}
+                className={generateClassName(
+                  skill === skills[activeIndexSkills],
+                )}
               >
                 {skill}
               </div>
             ))}
           </div>
+          <h2 className="p-2 pt-4 text-center text-xl md:text-xl">
+            Currently expanding my skills
+          </h2>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            {currentlyExpandingSkills.map((currentlyExpandingSkill) => (
+              <div
+                key={currentlyExpandingSkill}
+                className={generateClassName(
+                  currentlyExpandingSkill ===
+                    currentlyExpandingSkills[
+                      activeIndexCurrentlyExpandingSkills
+                    ],
+                )}
+              >
+                {currentlyExpandingSkill}
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="mt-8 flex justify-center gap-x-6">
+        <div className="mt-8 flex justify-center gap-x-8">
           <a
             href="https://www.linkedin.com/feed"
             target="_blank"
