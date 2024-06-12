@@ -1,6 +1,15 @@
 import { useState } from "react";
 import data from "./data.json";
 
+interface ProjectProps {
+  id: number;
+  name: string;
+  usedTechnologies: string;
+  description: string;
+  link: string;
+  githubLink: string;
+}
+
 interface ProjectCardProps {
   project: ProjectProps;
   isExpanded: boolean;
