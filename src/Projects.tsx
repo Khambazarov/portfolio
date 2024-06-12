@@ -12,7 +12,7 @@ interface ProjectProps {
 export const Projects = () => {
   const projectList: ProjectProps[] = [
     {
-      id: 0,
+      id: 1,
       name: "My Portfolio App",
       shortDescription: "Developed using vite + react + typeScript + tailwind",
       description:
@@ -22,7 +22,7 @@ export const Projects = () => {
         "https://github.com/Khambazarov/dci-ui-project-using-vite-tailwind",
     },
     {
-      id: 1,
+      id: 2,
       name: "Randomizer App",
       shortDescription: "Developed using vite + react.js",
       description:
@@ -31,7 +31,7 @@ export const Projects = () => {
       githubLink: "https://github.com/Khambazarov/random-generator",
     },
     {
-      id: 2,
+      id: 3,
       name: "Weather Forecast App",
       shortDescription: "Developed using vite + react + typeScript",
       description:
@@ -40,7 +40,7 @@ export const Projects = () => {
       githubLink: "https://github.com/Khambazarov/weather-ts",
     },
     {
-      id: 3,
+      id: 4,
       name: "TODO App",
       shortDescription: "Developed using vite + react.js",
       description:
@@ -49,7 +49,7 @@ export const Projects = () => {
       githubLink: "https://github.com/Khambazarov/todo",
     },
     {
-      id: 4,
+      id: 5,
       name: "Guessing App",
       shortDescription: "Developed using vite + react.js",
       description:
@@ -58,7 +58,7 @@ export const Projects = () => {
       githubLink: "https://github.com/Khambazarov/guess-my-number",
     },
     {
-      id: 5,
+      id: 6,
       name: "Memory App",
       shortDescription: "Currently being developed using Vite + React.js",
       description:
@@ -99,7 +99,7 @@ export const Projects = () => {
             <p className="mb-2 text-gray-300">
               {isExpanded
                 ? project.description
-                : `${project.description.substring(0, 40)}...`}
+                : `${project.description.substring(0, 50)}...`}
             </p>
             <button
               className="mb-2 text-gray-400"
