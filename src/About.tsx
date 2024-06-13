@@ -16,7 +16,7 @@ const skills = [
   "Linux",
 ];
 
-const currentlyExpandingSkills = ["Tailwind", "TypeScript", "ReactTS", "Next"];
+const currentlyExpandingSkills = ["Tailwind", "TypeScript", "ReactTS", "NextJS"];
 
 export const About = () => {
   const [activeIndexSkills, setActiveIndexSkills] = useState(0);
