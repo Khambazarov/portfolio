@@ -20,7 +20,7 @@ export const Contact = () => {
       <ul className="mb-12 mt-4">
         <li>
           <NavLink
-            className="rounded border border-white p-2 font-mono text-xl uppercase text-white transition-colors duration-300 hover:bg-teal-400 hover:text-gray-900"
+            className="animate-pulse rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:text-teal-400 sm:p-3"
             to="/"
           >
             Home
