@@ -63,7 +63,9 @@ export const About = () => {
           such as MERN-stack
         </h2>
         <div>
-          <h2 className="p-2 text-center text-xl md:text-xl">My skills</h2>
+          <h2 className="mb-2 rounded border p-2 text-center text-xl md:text-xl">
+            My skills
+          </h2>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
             {skills.map((skill) => (
               <div
@@ -76,7 +78,7 @@ export const About = () => {
               </div>
             ))}
           </div>
-          <h2 className="p-2 pt-4 text-center text-xl md:text-xl">
+          <h2 className="mt-12 mb-2 rounded border p-2 text-center text-xl md:text-xl">
             Currently expanding my skills
           </h2>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
