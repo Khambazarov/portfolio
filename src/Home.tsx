@@ -11,7 +11,7 @@ export const Home = () => {
         This application offers various features to manage your tasks. You can
         create projects, manage contacts, and much more.
       </p> */}
-      <div className="flex flex-wrap justify-center gap-x-4">
+      <div className="flex flex-wrap justify-center gap-4 gap-x-8">
         <Link
           to="/projects"
           className="w-44 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400"
@@ -22,10 +22,16 @@ export const Home = () => {
           to="/contact"
           className="w-44 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400"
         >
+          About Me
+        </Link>
+        <Link
+          to="/contact"
+          className="w-44 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400"
+        >
           Contact Me
         </Link>
       </div>
-      <div className="flex justify-center gap-x-36 mt-6">
+      <div className="mt-6 flex justify-center gap-x-8">
         <a
           href="https://www.linkedin.com/feed"
           target="_blank"
