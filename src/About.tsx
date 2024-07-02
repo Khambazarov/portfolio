@@ -16,7 +16,12 @@ const skills = [
   "Linux",
 ];
 
-const currentlyExpandingSkills = ["Tailwind", "TypeScript", "ReactTS", "NextJS"];
+const currentlyExpandingSkills = [
+  "Tailwind",
+  "TypeScript",
+  "ReactTS",
+  "NextJS",
+];
 
 export const About = () => {
   const [activeIndexSkills, setActiveIndexSkills] = useState(0);
@@ -57,7 +62,7 @@ export const About = () => {
         <h2 className="p-2 pb-6 text-center text-lg md:text-3xl">
           such as MERN-stack
         </h2>
-        <div className="rounded border p-2">
+        <div>
           <h2 className="p-2 text-center text-xl md:text-xl">My skills</h2>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
             {skills.map((skill) => (
