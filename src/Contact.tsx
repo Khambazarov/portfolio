@@ -1,4 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { NavLink } from "react-router-dom";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID;
 
@@ -14,7 +16,17 @@ export const Contact = () => {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900 p-5">
+    <div className="flex min-h-screen flex-col items-center bg-gray-900 p-5">
+      <ul className="mb-12 mt-4">
+        <li>
+          <NavLink
+            className="rounded border border-white p-2 font-mono text-xl uppercase text-white transition-colors duration-300 hover:bg-teal-400 hover:text-gray-900"
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+      </ul>
       <h1 className="mb-5 text-4xl font-bold text-white">Contact Me</h1>
       <form onSubmit={handleSubmit} className="w-full max-w-md">
         <div className="-mx-3 mb-6 flex flex-wrap">
@@ -88,7 +100,7 @@ export const Contact = () => {
               errors={state.errors}
             />
           </div>
-          <div className="mt-6 w-full px-3">
+          <div className="mt-6 flex w-full justify-center px-3">
             <button
               type="submit"
               disabled={state.submitting}
@@ -99,6 +111,24 @@ export const Contact = () => {
           </div>
         </div>
       </form>
+      <div className="mt-6 flex justify-between gap-x-8">
+        <a
+          href="https://www.linkedin.com/feed"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
+        >
+          <FaLinkedin size={48} />
+        </a>
+        <a
+          href="https://github.com/Khambazarov"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
+        >
+          <FaGithubSquare size={48} />
+        </a>
+      </div>
     </div>
   );
 };

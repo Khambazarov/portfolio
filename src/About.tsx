@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const skills = [
@@ -49,6 +50,24 @@ export const About = () => {
   return (
     <>
       <div className="flex min-h-screen flex-col items-center bg-gray-900 text-white">
+        <ul className="w-full mt-6 px-4 flex justify-between">
+          <li>
+            <NavLink
+              className="rounded border border-white p-2 font-mono text-xl uppercase text-white transition-colors duration-300 hover:bg-teal-400 hover:text-gray-900"
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="rounded border border-white p-2 font-mono text-xl uppercase text-white transition-colors duration-300 hover:bg-teal-400 hover:text-gray-900"
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
         <h1 className="my-5 p-2 text-center text-3xl font-bold">
           Hello, I'm <span className="text-teal-500"> Renat</span> based in
           Hamburg
@@ -78,7 +97,7 @@ export const About = () => {
               </div>
             ))}
           </div>
-          <h2 className="mt-12 mb-2 rounded border p-2 text-center text-xl md:text-xl">
+          <h2 className="mb-2 mt-12 rounded border p-2 text-center text-xl md:text-xl">
             Currently expanding my skills
           </h2>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">

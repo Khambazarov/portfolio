@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import data from "./data.json";
 
 interface ProjectProps {
@@ -67,17 +68,37 @@ export const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 p-5">
-      <h1 className="mb-5 flex justify-center text-4xl font-bold text-white">
-        My Projects
-      </h1>
-      {projectList.map((project, index) => (
-        <ProjectCard
-          project={project}
-          isExpanded={expandedStates[index]}
-          toggleExpanded={() => toggleExpanded(index)}
-        />
-      ))}
-    </div>
+    <>
+      <div className="min-h-screen bg-gray-900 p-5">
+        <ul className="mb-4 flex justify-between">
+          <li>
+            <NavLink
+              className="rounded border border-white p-2 font-mono text-xl uppercase text-white transition-colors duration-300 hover:bg-teal-400 hover:text-gray-900"
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="rounded border border-white p-2 font-mono text-xl uppercase text-white transition-colors duration-300 hover:bg-teal-400 hover:text-gray-900"
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+        <h1 className="mb-5 flex justify-center text-4xl font-bold text-white">
+          My Projects
+        </h1>
+        {projectList.map((project, index) => (
+          <ProjectCard
+            project={project}
+            isExpanded={expandedStates[index]}
+            toggleExpanded={() => toggleExpanded(index)}
+          />
+        ))}
+      </div>
+    </>
   );
 };
