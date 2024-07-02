@@ -7,7 +7,7 @@ export const Home = () => {
       <h1 className="mb-5 animate-pulse text-4xl font-bold text-white">
         Welcome to my Application
       </h1>
-      <div className="flex flex-wrap justify-center gap-4 gap-x-8">
+      <div className="flex flex-col justify-center gap-4 gap-x-8 sm:flex-row">
         <Link
           to="/projects"
           className="w-44 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400"
