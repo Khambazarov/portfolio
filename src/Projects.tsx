@@ -73,7 +73,7 @@ export const Projects = () => {
         <ul className="mb-4 flex justify-between">
           <li>
             <NavLink
-              className="animate-pulse rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:text-teal-400 sm:p-3"
+              className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/"
             >
               Home
@@ -81,7 +81,7 @@ export const Projects = () => {
           </li>
           <li>
             <NavLink
-              className="animate-pulse rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:text-teal-400 sm:p-3"
+              className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/contact"
             >
               Contact

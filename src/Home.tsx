@@ -66,7 +66,7 @@ export const Home = () => {
         <ul className="mb-6 flex flex-col items-center gap-5 px-5 sm:flex-row sm:gap-x-28">
           <li>
             <NavLink
-              className="animate-pulse rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:text-teal-400 sm:p-3"
+              className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/projects"
             >
               My Projects
@@ -74,7 +74,7 @@ export const Home = () => {
           </li>
           <li>
             <NavLink
-              className="animate-pulse rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:text-teal-400 sm:p-3"
+              className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/contact"
             >
               Contact Me
