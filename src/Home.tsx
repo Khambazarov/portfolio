@@ -22,6 +22,7 @@ const currentlyExpandingSkills = [
   "TypeScript",
   "ReactTS",
   "NextJS",
+  "Astro",
 ];
 
 export const Home = () => {
