@@ -4,7 +4,7 @@
     "name": "My Portfolio App",
     "usedTechnologies": "The development technologies: Vite + ReactTS + Tailwind",
     "description": "This web application serves as a personal portfolio and contact form. It is designed to showcase projects and provide an easy way for visitors to get in touch. The home page greets visitors and provides a brief introduction. The projects page displays a list of projects with descriptions. Each project has two links for further information: one leading to the live website and the other to the GitHub repository where the source code is hosted. The contact form allows visitors to leave a message. The application is built with modern technologies and practices to ensure a fast and responsive user experience. It uses React for the user interface, TypeScript for type safety, and Vite for efficient development and fast build process. For styling, it uses Tailwind CSS, a utility-first CSS framework that allows for high customization.",
-    "link": "https://khambazarov.netlify.app/",
+    "link": "https://khambazarov.dev/",
     "githubLink": "https://github.com/Khambazarov/portfolio"
   },
   {
