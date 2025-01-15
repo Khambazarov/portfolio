@@ -6,23 +6,30 @@ const skills = [
   "CSS",
   "SASS",
   "Bootstrap",
+  "Tailwind",
   "JavaScript",
-  "ReactJS",
+  "TypeScript",
+  "React",
   "Node",
   "Express",
+  "RESTful",
   "MongoDB",
   "Mongoose",
   "Git",
   "GitHub",
   "Linux",
+  "VSCode",
 ];
 
 const currentlyExpandingSkills = [
-  "Tailwind",
-  "TypeScript",
-  "ReactTS",
-  "NextJS",
+  "Bun",
+  "Deno",
+  "SQLite",
+  "Next",
+  "Nest",
   "Astro",
+  "Docker",
+  "Kubernetes",
 ];
 
 export const Home = () => {
