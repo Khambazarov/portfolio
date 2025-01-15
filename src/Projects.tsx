@@ -23,11 +23,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   isExpanded,
   toggleExpanded,
 }) => (
-  <div key={project.id} className="mb-4 rounded bg-gray-800 p-4 shadow-lg">
+  <div
+    key={project.id}
+    className="relative mb-4 rounded bg-gray-800 p-4 shadow-lg"
+  >
     <h2 className="mb-2 text-2xl font-bold text-white">
       {project.name}
       {project.inProgress && (
-        <span className="text-yellow-500"> ( In Progress )</span>
+        <span className="absolute left-8 top-20 -rotate-12 transform animate-pulse text-4xl text-yellow-500">
+          Still in Development
+        </span>
       )}
     </h2>
     <h3 className="mb-2 font-bold text-gray-300">{project.usedTechnologies}</h3>
