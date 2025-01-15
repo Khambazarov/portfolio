@@ -1,21 +1,40 @@
 # React + TypeScript + Vite
 
-This project is a simple web application built with React + TypeScript + Vite. It uses Vite as the build tool and provides a minimal setup for developing modern React applications.
+Welcome to the React + TypeScript + Vite project! This is a modern web application built using React and TypeScript, with Vite as the build tool. This setup provides a fast and minimal environment for developing high-performance React applications.
 
 ## Features
 
-- Home: Displays a welcome page.
-- Projects: Displays a list of projects.
-- Contact: Displays a contact form.
+- **Home**: A welcoming landing page that introduces the application.
+- **Projects**: A dynamic list of projects showcasing various works.
+- **Contact**: A contact form for users to get in touch.
 
 ## Installation and Running
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
+
+    ```bash
+    git clone git@github.com:Khambazarov/portfolio.git
+    cd portfolio
+    ```
+
+2. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server**:
+
+    ```bash
+    npm run dev
+    ```
+
+## Building for Production
+
+To create a production build, run:
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
-cd yourrepository
-npm install
-npm run dev
+npm run build
+```
