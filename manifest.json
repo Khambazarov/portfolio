@@ -1,0 +1,10 @@
+{
+  "name": "Portfolio",
+  "short_name": "Portfolio",
+  "theme_color": "#fff",
+  "background_color": "#000",
+  "display": "fullScreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/index.html"
+}
