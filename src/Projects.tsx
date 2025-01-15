@@ -44,7 +44,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <button
       className="mb-2 text-gray-400"
       onClick={toggleExpanded}
-      aria-label="click and read more about this Application"
+      aria-label={
+        isExpanded
+          ? "Show less about this application"
+          : "Read more about this application"
+      }
     >
       {isExpanded ? "Show Less" : "Read More"}
     </button>
