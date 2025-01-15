@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           className="mb-2 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400 md:mb-0 md:mr-2"
           aria-label={`View website for ${project.name}`}
         >
-          {`View ${project.name} Website`}
+          View Website
         </a>
       )}
       {project.inProgress ? (
