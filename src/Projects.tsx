@@ -9,6 +9,7 @@ interface ProjectProps {
   description: string;
   link: string;
   githubLink: string;
+  inProgress: boolean;
 }
 
 interface ProjectCardProps {
@@ -23,7 +24,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   toggleExpanded,
 }) => (
   <div key={project.id} className="mb-4 rounded bg-gray-800 p-4 shadow-lg">
-    <h2 className="mb-2 text-2xl font-bold text-white">{project.name}</h2>
+    <h2 className="mb-2 text-2xl font-bold text-white">
+      {project.name}
+      {project.inProgress && (
+        <span className="text-yellow-500"> ( In Progress )</span>
+      )}
+    </h2>
     <h3 className="mb-2 font-bold text-gray-300">{project.usedTechnologies}</h3>
     <p className="mb-2 text-gray-300">
       {isExpanded
@@ -34,22 +40,36 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {isExpanded ? "Show Less" : "Read More"}
     </button>
     <div className="flex flex-col md:flex-row">
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mb-2 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400 md:mb-0 md:mr-2"
-      >
-        View Website
-      </a>
-      <a
-        href={project.githubLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400"
-      >
-        View Project on GitHub
-      </a>
+      {project.inProgress ? (
+        <span className="mb-2 rounded bg-gray-500 px-4 py-2 text-center text-gray-400 md:mb-0 md:mr-2">
+          View Website
+        </span>
+      ) : (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mb-2 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400 md:mb-0 md:mr-2"
+          aria-label={`View website for ${project.name}`}
+        >
+          View Website
+        </a>
+      )}
+      {project.inProgress ? (
+        <span className="mb-2 rounded bg-gray-500 px-4 py-2 text-center text-gray-400 md:mb-0 md:mr-2">
+          View Project on GitHub
+        </span>
+      ) : (
+        <a
+          href={project.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400"
+          aria-label={`View GitHub repository for ${project.name}`}
+        >
+          View Project on GitHub
+        </a>
+      )}
     </div>
   </div>
 );
@@ -93,6 +113,7 @@ export const Projects = () => {
         </h1>
         {projectList.map((project, index) => (
           <ProjectCard
+            key={project.id}
             project={project}
             isExpanded={expandedStates[index]}
             toggleExpanded={() => toggleExpanded(index)}
