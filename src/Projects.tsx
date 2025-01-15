@@ -41,7 +41,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         ? project.description
         : `${project.description.substring(0, 50)}...`}
     </p>
-    <button className="mb-2 text-gray-400" onClick={toggleExpanded}>
+    <button
+      className="mb-2 text-gray-400"
+      onClick={toggleExpanded}
+      aria-label="Click and read more"
+    >
       {isExpanded ? "Show Less" : "Read More"}
     </button>
     <div className="flex flex-col md:flex-row">
