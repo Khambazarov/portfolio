@@ -1,11 +1,11 @@
 [
   {
     "id": 0,
-    "name": "MERN Stack Project",
-    "usedTechnologies": "The development technologies: MongoDB + Express + React + Node.js + Mongoose + Zod",
-    "description": "This web application is built using the MERN stack, which includes MongoDB for the database, Express for the backend framework, React for the frontend framework, and Node.js for the runtime environment. Additionally, it uses Mongoose for object data modeling (ODM) and Zod for schema validation. The application is designed to provide a comprehensive solution for managing and displaying data. It includes features such as user authentication, data visualization, and CRUD operations. The frontend is built with React, ensuring a dynamic and responsive user interface. The backend is powered by Express and Node.js, providing a robust and scalable server-side solution. MongoDB is used as the database to store and manage data efficiently. Mongoose is used to interact with MongoDB, providing a straightforward and schema-based solution. Zod is used for validating data schemas, ensuring data integrity and consistency.",
-    "link": "https://khambazarov.dev/",
-    "githubLink": "https://github.com/Khambazarov/",
+    "name": "MERN Stack – Realtime Chat App",
+    "usedTechnologies": "The development technologies: MongoDB + Express + React + Node.js + Mongoose + Zod + socket.io + socket.io-client",
+    "description": "This web application is built using the MERN stack, which includes MongoDB for the database, Express for the backend framework, React for the frontend framework, and Node.js for the runtime environment. Additionally, it uses Mongoose for object data modeling (ODM) and Zod for schema validation. The application is designed to provide a comprehensive solution for managing and displaying data. It includes features such as user authentication, data visualization, and CRUD operations. The frontend is built with React, ensuring a dynamic and responsive user interface. The backend is powered by Express and Node.js, providing a robust and scalable server-side solution. MongoDB is used as the database to store and manage data efficiently. Mongoose is used to interact with MongoDB, providing a straightforward and schema-based solution. Zod is used for validating data schemas, ensuring data integrity and consistency. Real-time communication is enabled using socket.io on the backend and socket.io-client on the frontend, allowing for instant messaging and updates.",
+    "link": "https://hello-word.khambazarov.dev/",
+    "githubLink": "https://github.com/final-project-real-time-chat/realtime-chat",
     "inProgress": true
   },
   {
