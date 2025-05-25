@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import data from "./data.json";
+import { trackEvent } from "./ga4";
 
 interface ProjectProps {
   id: number;
@@ -64,6 +65,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           rel="noopener noreferrer"
           className="mb-2 rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400 md:mb-0 md:mr-2"
           aria-label={`View website for ${project.name}`}
+          onClick={() => {
+            console.log(`View website for ${project.name}`);
+            trackEvent("click", "button", `View website for ${project.name}`);
+          }}
         >
           View Website
         </a>
@@ -79,6 +84,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           rel="noopener noreferrer"
           className="rounded bg-teal-500 px-4 py-2 text-center text-gray-900 transition-colors duration-300 hover:bg-teal-400"
           aria-label={`View GitHub repository for ${project.name}`}
+          onClick={() => {
+            console.log(`View GitHub repository for ${project.name}`);
+            trackEvent("click", "button", `View GitHub repository for ${project.name}`);
+          }}
         >
           View Project on GitHub
         </a>

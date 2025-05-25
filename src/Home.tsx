@@ -137,6 +137,10 @@ export const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
+            onClick={() => {
+              console.log("LinkedIn button clicked");
+              trackEvent("click", "button", "LinkedIn Button");
+            }}
           >
             <FaLinkedin size={48} />
           </a>
@@ -145,6 +149,10 @@ export const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
+            onClick={() => {
+              console.log("GitHub button clicked");
+              trackEvent("click", "button", "GitHub Button");
+            }}
           >
             <FaGithubSquare size={48} />
           </a>
