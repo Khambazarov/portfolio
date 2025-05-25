@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { trackEvent } from "./ga4";
 
 const skills = [
   "CSS",
@@ -76,6 +77,9 @@ export const Home = () => {
             <NavLink
               className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/projects"
+              onClick={() => {
+                trackEvent("click", "button", "My Projects Button");
+              }}
             >
               My Projects
             </NavLink>
@@ -84,6 +88,9 @@ export const Home = () => {
             <NavLink
               className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/contact"
+              onClick={() => {
+                trackEvent("click", "button", "Contact Me Button");
+              }}
             >
               Contact Me
             </NavLink>
