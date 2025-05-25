@@ -78,6 +78,7 @@ export const Home = () => {
               className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/projects"
               onClick={() => {
+                console.log("My Projects button clicked");
                 trackEvent("click", "button", "My Projects Button");
               }}
             >
@@ -89,6 +90,7 @@ export const Home = () => {
               className="rounded border border-white bg-teal-500 p-2 font-mono text-lg uppercase text-gray-900 transition-colors duration-1000 hover:bg-teal-400 sm:p-3"
               to="/contact"
               onClick={() => {
+                console.log("Contact Me button clicked");
                 trackEvent("click", "button", "Contact Me Button");
               }}
             >
