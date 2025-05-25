@@ -23,6 +23,10 @@ const skills = [
 ];
 
 const currentlyExpandingSkills = [
+  "GA4",
+  "Google Ads",
+  "SEA",
+  "SEO",
   "Bun",
   "Deno",
   "SQLite",
