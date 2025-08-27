@@ -113,7 +113,7 @@ export const Contact = () => {
       </form>
       <div className="mt-6 flex justify-between gap-x-8">
         <a
-          href="https://www.linkedin.com/feed"
+          href="https://www.linkedin.com/in/khambazarov/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-teal-500 transition-colors duration-300 hover:text-teal-400"
