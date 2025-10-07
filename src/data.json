@@ -1,20 +1,20 @@
 [
   {
     "id": 0,
+    "name": "New Portfolio",
+    "usedTechnologies": "The development technologies: Vite + ReactTS + Tailwind + i18next + Cloudflare Turnstile",
+    "description": "This web application serves as a personal portfolio and contact form. It is designed to showcase projects and provide an easy way for visitors to get in touch. The home page greets visitors and provides a brief introduction. The projects page displays a list of projects with descriptions. Each project has two links for further information: one leading to the live website and the other to the GitHub repository where the source code is hosted. The contact form allows visitors to leave a message. The application is built with modern technologies and practices to ensure a fast and responsive user experience. It uses React for the user interface, TypeScript for type safety, and Vite for efficient development and fast build process. For styling, it uses Tailwind CSS, a utility-first CSS framework that allows for high customization. Additionally, the application supports multiple languages using i18next, making it accessible to a broader audience. To protect against spam, the contact form is secured by Cloudflare Turnstile, which ensures that only genuine messages are received.",
+    "link": "https://portfolio-khambazarov.netlify.app/",
+    "githubLink": "https://github.com/Khambazarov/homepage",
+    "inProgress": false
+  },
+  {
+    "id": 1,
     "name": "Hello, Word! – Realtime Chat App",
     "usedTechnologies": "The development technologies: MongoDB + Express + React + Node.js + Mongoose + Zod + socket.io + socket.io-client",
     "description": "This web application is built using the MERN stack, which includes MongoDB for the database, Express for the backend framework, React for the frontend framework, and Node.js for the runtime environment. Additionally, it uses Mongoose for object data modeling (ODM) and Zod for schema validation. The application is designed to provide a comprehensive solution for managing and displaying data. It includes features such as user authentication, data visualization, and CRUD operations. The frontend is built with React, ensuring a dynamic and responsive user interface. The backend is powered by Express and Node.js, providing a robust and scalable server-side solution. MongoDB is used as the database to store and manage data efficiently. Mongoose is used to interact with MongoDB, providing a straightforward and schema-based solution. Zod is used for validating data schemas, ensuring data integrity and consistency. Real-time communication is enabled using socket.io on the backend and socket.io-client on the frontend, allowing for instant messaging and updates.",
     "link": "https://hello-word.khambazarov.dev/",
     "githubLink": "https://github.com/final-project-real-time-chat/realtime-chat",
-    "inProgress": false
-  },
-  {
-    "id": 1,
-    "name": "Portfolio",
-    "usedTechnologies": "The development technologies: Vite + ReactTS + Tailwind",
-    "description": "This web application serves as a personal portfolio and contact form. It is designed to showcase projects and provide an easy way for visitors to get in touch. The home page greets visitors and provides a brief introduction. The projects page displays a list of projects with descriptions. Each project has two links for further information: one leading to the live website and the other to the GitHub repository where the source code is hosted. The contact form allows visitors to leave a message. The application is built with modern technologies and practices to ensure a fast and responsive user experience. It uses React for the user interface, TypeScript for type safety, and Vite for efficient development and fast build process. For styling, it uses Tailwind CSS, a utility-first CSS framework that allows for high customization.",
-    "link": "https://khambazarov.dev/",
-    "githubLink": "https://github.com/Khambazarov/portfolio",
     "inProgress": false
   },
   {
