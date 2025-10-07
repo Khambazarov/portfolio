@@ -5,7 +5,7 @@
     "usedTechnologies": "The development technologies: Vite + ReactTS + Tailwind + i18next + Cloudflare Turnstile",
     "description": "This web app is a personal portfolio and contact hub. It showcases selected projects with short descriptions and two clear actions per item: view the live site or inspect the source on GitHub. A friendly home section introduces me and my work, and a contact form lets visitors reach out directly. Built with React, TypeScript, and Vite, the site is fast, responsive, and easy to maintain. Styling is handled with Tailwind CSS, including first-class dark and light mode support. Internationalization is provided via i18next so the interface can switch languages seamlessly. To keep the inbox clean without friction for users, the form is protected by Cloudflare Turnstile (a CAPTCHA alternative). Overall, the goal is a clean, accessible experience that loads quickly and makes it simple to learn about my work or get in touch.",
     "link": "https://portfolio-khambazarov.netlify.app/",
-    "githubLink": "https://github.com/Khambazarov/homepage",
+    "githubLink": "https://github.com/Khambazarov/homepage/",
     "inProgress": false
   },
   {
@@ -14,7 +14,7 @@
     "usedTechnologies": "The development technologies: MongoDB + Express + React + Node.js + Mongoose + Zod + socket.io + socket.io-client",
     "description": "This web application is built using the MERN stack, which includes MongoDB for the database, Express for the backend framework, React for the frontend framework, and Node.js for the runtime environment. Additionally, it uses Mongoose for object data modeling (ODM) and Zod for schema validation. The application is designed to provide a comprehensive solution for managing and displaying data. It includes features such as user authentication, data visualization, and CRUD operations. The frontend is built with React, ensuring a dynamic and responsive user interface. The backend is powered by Express and Node.js, providing a robust and scalable server-side solution. MongoDB is used as the database to store and manage data efficiently. Mongoose is used to interact with MongoDB, providing a straightforward and schema-based solution. Zod is used for validating data schemas, ensuring data integrity and consistency. Real-time communication is enabled using socket.io on the backend and socket.io-client on the frontend, allowing for instant messaging and updates.",
     "link": "https://hello-word.khambazarov.dev/",
-    "githubLink": "https://github.com/final-project-real-time-chat/realtime-chat",
+    "githubLink": "https://github.com/final-project-real-time-chat/realtime-chat/",
     "inProgress": false
   },
   {
@@ -32,7 +32,7 @@
     "usedTechnologies": "The development technologies: Vite + ReactTS + CSS",
     "description": "A weather forecast app that provides current weather information and forecasts for various cities worldwide.",
     "link": "https://weather.khambazarov.dev/",
-    "githubLink": "https://github.com/Khambazarov/weather-ts",
+    "githubLink": "https://github.com/Khambazarov/weather-ts/",
     "inProgress": false
   },
   {
@@ -41,7 +41,7 @@
     "usedTechnologies": "The development technologies: Vite + ReactJS + Material – UI + SCSS",
     "description": "An efficient task management application that allows users to organize and track their daily tasks. Users can add, edit, and delete tasks, thereby enhancing their productivity and better managing their time.",
     "link": "https://todo.khambazarov.dev/",
-    "githubLink": "https://github.com/Khambazarov/todo",
+    "githubLink": "https://github.com/Khambazarov/todo/",
     "inProgress": false
   },
   {
@@ -50,7 +50,7 @@
     "usedTechnologies": "The development technologies: Vite + ReactJS + CSS",
     "description": "An exciting number guessing game where users have to guess a hidden number within five attempts. This fun game promotes logical thinking and quick decision-making.",
     "link": "https://guessing.khambazarov.dev/",
-    "githubLink": "https://github.com/Khambazarov/guess-my-number",
+    "githubLink": "https://github.com/Khambazarov/guess-my-number/",
     "inProgress": false
   },
   {
@@ -59,7 +59,7 @@
     "usedTechnologies": "The development technologies: Vite + ReactJS + CSS",
     "description": "An exciting number guessing game where users have to guess a hidden number within five attempts. This fun game promotes logical thinking and quick decision-making.",
     "link": "https://memory.khambazarov.dev/",
-    "githubLink": "https://github.com/Khambazarov/memory",
+    "githubLink": "https://github.com/Khambazarov/memory/",
     "inProgress": true
   }
 ]
