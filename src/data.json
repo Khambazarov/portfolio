@@ -19,11 +19,11 @@
   },
   {
     "id": 2,
-    "name": "Randomizer",
-    "usedTechnologies": "The development technologies: Vite + ReactJS + CSS",
-    "description": "A helpful tool for teachers and students that selects random student from a list. Ideal for classroom activities, quiz games and more.",
-    "link": "https://randomizer.khambazarov.dev/",
-    "githubLink": "https://github.com/Khambazarov/random-generator",
+    "name": "Fensterputzer A&G",
+    "usedTechnologies": "The development technologies: Vite + Astro + TypeScript + Tailwind",
+    "description": "A website for a local window cleaning company that provides information about their services, pricing, and contact details. The website is designed to be user-friendly and visually appealing, with a focus on showcasing the company's professionalism and expertise in the field of window cleaning.",
+    "link": "https://fensterputzer.netlify.app/",
+    "githubLink": "https://github.com/Khambazarov/fensterputzer/",
     "inProgress": false
   },
   {
@@ -55,6 +55,15 @@
   },
   {
     "id": 6,
+    "name": "Randomizer",
+    "usedTechnologies": "The development technologies: Vite + ReactJS + CSS",
+    "description": "A helpful tool for teachers and students that selects random student from a list. Ideal for classroom activities, quiz games and more.",
+    "link": "https://randomizer.khambazarov.dev/",
+    "githubLink": "https://github.com/Khambazarov/random-generator",
+    "inProgress": false
+  },
+  {
+    "id": 7,
     "name": "Memory",
     "usedTechnologies": "The development technologies: Vite + ReactJS + CSS",
     "description": "An exciting number guessing game where users have to guess a hidden number within five attempts. This fun game promotes logical thinking and quick decision-making.",
